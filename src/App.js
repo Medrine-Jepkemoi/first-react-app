@@ -1,6 +1,12 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [count, setCount] = useState(0);
+  const handleClick = () => {
+    alert("You clicked this button");
+    setCount(count + 1);
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -12,13 +18,8 @@ function App() {
           alt="historical town"
         />
         <p>Historical old town with narrow alleys</p>
-        <button
-          onClick={() => {
-            alert("You clicked this button");
-          }}
-        >
-          Counter
-        </button>
+        <button onClick={handleClick}>Counter</button>
+        <p>'You clicked this button {count} times'</p>
         {/* <h1>First React App</h1>
         <p>
           Edit <code>src/App.js</code> and save to reload.
