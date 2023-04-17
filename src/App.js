@@ -12,13 +12,20 @@ function App() {
           alt="historical town"
         />
         <p>Historical old town with narrow alleys</p>
-        {/* <h1>First React App</h1> */}
+        <button
+          onClick={() => {
+            alert("You clicked this button");
+          }}
+        >
+          Counter
+        </button>
+        {/* <h1>First React App</h1>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           Learn React
-        </a>
+        </a> */}
       </header>
     </div>
   );
